@@ -5,14 +5,14 @@ def factorial(number):
     if number < 0 :
         number = -number
         negative = True
+    elif number == 0 :
+        return 0
     
     for i in range(number) :
         value = (i+1) * value
     
     if negative :
         value = -value
-    elif number == 0 :
-        value = 0
 
     return value
 
